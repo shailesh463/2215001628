@@ -6,8 +6,8 @@ const schema=mongoose.Schema({
         required:true
     },
     comments:{
-        tpye:mongoose.Schema.Types.ObjectId,
-        ref:'Comment'
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'Comment',
     }
 })
 

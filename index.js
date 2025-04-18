@@ -3,6 +3,7 @@ const app=express();
 const route=require('./routes/routes');
 const mongoose=require('mongoose');
 
+
 mongoose.connect('mongodb://localhost:27017/hostname').then(()=>{
     console.log('connected to mongodb')
 }).catch((err)=>{
