@@ -1,10 +1,11 @@
 const mongoose=require('mongoose');
+const comments = require('./comments');
 const schema=mongoose.Schema({
-    USERNAME:{
+    username:{
         type:String,
         required:true
     },
-    COMMENTS:{
+    comments:{
         tpye:mongoose.Schema.Types.ObjectId,
         ref:'Comment'
     }
